@@ -1,0 +1,60 @@
+---
+---
+
+<section id="title">
+	<img
+		src="/logo.svg"
+		class="logo"
+		alt="Le logo de PSES est un lapin pixellisé avec un degradé vertical de bleu, vert, jaune, orange et rouge."
+	/>
+	<h1>Festival Pas Sage En Seine</h1>
+	<p>Société · Internet · Liberté</p>
+	<p>Faites preuve de curiosité</p>
+	<p>
+		Du jeudi 15 au samedi 17 juin 2023,<br />
+		à la médiathèque de Choisy-le-Roi
+	</p>
+</section>
+
+<style>
+	section {
+		display: flex;
+		width: 100%;
+		min-height: 92vh; /** roughly the size */
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: var(--color-primary);
+	}
+	section::after {
+		margin-top: 2vh;
+		font-size: 1.5rem;
+		content: "↓";
+		display: block;
+	}
+
+	.logo {
+		max-width: 30vh;
+		margin-bottom: 1rem;
+		background-color: var(--color-primary);
+	}
+
+	h1 {
+		font-size: 2rem;
+		margin: 0.5rem;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	p {
+		margin: 0.35rem;
+		text-align: center;
+	}
+	p:first-of-type {
+		margin-top: 0.75rem;
+		font-size: 1.35rem;
+	}
+	p ~ p {
+		font-size: 1rem;
+	}
+</style>

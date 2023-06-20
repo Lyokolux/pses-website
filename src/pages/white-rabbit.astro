@@ -1,0 +1,142 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PSESFooter from "../components/organisms/PSESFooter.astro";
+import PSESHeader from "../components/organisms/PSESHeader.astro";
+import MastodonIcon from "../components/icons/MastodonIcon.astro";
+import EmailIcon from "../components/icons/EmailIcon.astro";
+import TwitterIcon from "../components/icons/TwitterIcon.astro";
+import OctopusIcon from "../components/icons/OctopusIcon.astro";
+import CodeursEnLiberteIcon from "../components/icons/CodeursEnLiberteIcon.astro";
+---
+
+<Layout title="Association White Rabbit - PSES">
+  <PSESHeader />
+  <main id="main">
+    <section id="association">
+      <h1>L'association</h1>
+      <p>
+        Le festival est géré par <strong>White Rabbit PSES</strong>, association
+        loi 1901 à but non lucratif.
+      </p>
+      <div
+        style="display:grid;grid-template-rows: 1fr 1fr; grid-template-columns: auto 1fr; gap: 0.5rem 0.75rem;"
+      >
+        <span>RNA :</span>
+        <span>W941011113</span>
+        <span>SIRET :</span>
+        <span>82819102300013</span>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Nous contacter</h2>
+      <ul class="semantic-list contact-list">
+        <li>
+          <a href="mailto:bureau@passageenseine.fr">
+            <EmailIcon className="logo" />
+            bureau@passageenseine.fr
+          </a>
+        </li>
+        <li>
+          <a href="https://mamot.fr/@passageenseine" target="_blank">
+            <MastodonIcon className="logo" />
+            Mastodon
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/passageenseine" target="_blank">
+            <TwitterIcon className="logo" />
+            Twitter
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section id="partners">
+      <h2>Nos partenaires</h2>
+      <ul class="semantic-list partner-list">
+        <li>
+          <a href="">
+            <OctopusIcon className="logo" />
+            Octopuce
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img class="logo" src="/img/code-lutin.png" alt="" />
+            Code Lutin
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <CodeursEnLiberteIcon className="logo" />
+            Codeurs en liberté
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img class="logo" src="/img/choisy-le-roi.png" alt="" />
+            Ville de Choisy-le-roi
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <PSESFooter />
+</Layout>
+
+<style>
+  #main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    max-width: 80ch;
+    width: 100%;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+    color: var(--color-primary);
+  }
+
+  #partners,
+  #contacts {
+  }
+
+  .contact-list,
+  .partner-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem;
+  }
+
+  .contact-list li a,
+  .partner-list li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 8px;
+    padding: 8px;
+    border-width: 4px;
+    --link-color: var(--color-primary);
+    --focus-color: var(--color-primary);
+    color: black;
+  }
+
+  .contact-list .logo {
+    width: 4rem;
+    height: 4rem;
+    color: black;
+  }
+
+  .partner-list .logo {
+    width: 9rem;
+    height: 9rem;
+  }
+</style>

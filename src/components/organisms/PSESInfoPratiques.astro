@@ -1,0 +1,52 @@
+---
+import Card from "../Card.astro";
+---
+
+<section id="infos">
+  <h2>Infos pratiques</h2>
+
+  <ul>
+    <li>
+      <Card href="#donate" title="Financement participatif" icon="🌹" />
+    </li>
+    <li>
+      <Card href="#speaker" title="Appel à participation" icon="🤙" />
+    </li>
+    <li>
+      <Card href="#schedule" title="Programme" icon="📅" />
+    </li>
+    <li>
+      <Card href="#schedule" title="Localisation" icon="📍" />
+    </li>
+    <li>
+      <Card href="#food" title="Restauration" icon="🍴" />
+    </li>
+    <li>
+      <Card href="#coc" title="Code de conduite" icon="🚸" />
+    </li>
+  </ul>
+</section>
+
+<style>
+  section {
+    padding: 5vh 15vw;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  li {
+    min-width: 300px;
+    background-color: var(--color-primary);
+  }
+</style>

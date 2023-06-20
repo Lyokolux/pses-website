@@ -1,0 +1,72 @@
+---
+---
+
+<footer>
+  <p class="licence">
+    Le contenu de ce site est sous licence
+    <img src="/img/cc-by-sa.svg" alt="CC-BY-SA" />
+  </p>
+  <p>
+    Site conçu avec le moteur de site statique<a href="https://astro.build/"
+      >Astro</a
+    >. Icônes par<a href="https://www.flaticon.com/authors/freepik">Freepik</a
+    >via<a href="https://www.flaticon.com/">FlatIcon</a>.
+  </p>
+  <p>
+    Pour toute remarque ou défaut sur le site, un signalement ou une
+    contribution à l’amélioration du site est la bienvenue sur notre page<a
+      href="https://github.com/pas-sage-en-seine/site">GitHub</a
+    >!
+  </p>
+</footer>
+
+<style>
+  footer {
+    margin: auto;
+    padding: 2.5vh 10vw;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    color: white;
+    background-color: var(--color-primary);
+  }
+
+  @media screen and (min-width: 960px) {
+    footer {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+  }
+
+  p {
+    max-width: 60ch;
+    margin: 0;
+  }
+
+  p:first-of-type {
+    margin-bottom: 1rem;
+  }
+
+  .licence {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+  .licence img {
+    width: 10rem;
+    background-color: white;
+    padding: 4px;
+    border-radius: 12px;
+  }
+
+  a {
+    padding: 0.175rem;
+  }
+</style>

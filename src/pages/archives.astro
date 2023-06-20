@@ -1,0 +1,37 @@
+---
+import PSESFooter from "../components/organisms/PSESFooter.astro";
+import PSESHeader from "../components/organisms/PSESHeader.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Le Festival - PSES">
+  <PSESHeader />
+  <main id="main">
+    <section>
+      <p>
+        🚧 En cours de construction. En attendant, vous pouvez rejoindre les
+        archives des vidéos via l'<a class="link" href="">instance Peertube</a>.
+      </p>
+    </section>
+  </main>
+  <PSESFooter />
+</Layout>
+
+<style>
+  #main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    max-width: 60ch;
+  }
+
+  .link {
+    padding: 0.25rem;
+
+    --link-color: var(--color-primary);
+    --focus-color: var(--color-primary);
+  }
+</style>

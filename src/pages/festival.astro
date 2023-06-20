@@ -1,0 +1,138 @@
+---
+import PSESFooter from "../components/organisms/PSESFooter.astro";
+import PSESHeader from "../components/organisms/PSESHeader.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Le Festival - PSES">
+  <PSESHeader />
+  <main id="main">
+    <!-- TODO: Appel à participation -->
+    <!-- TODO: Financement Participatif -->
+    <!-- TODO: Programme -->
+    <section id="localisation">
+      <h2>Lieu</h2>
+      <p>
+        Le festival a lieu aux abords de la Médiathèque Aragon à Choisy-le-Roi,
+        à 5 min à pied de la gare de RER C «&nbsp;Choisy-le-Roi&nbsp;»
+      </p>
+      <p>Le lieu est (vraiment) accessible aux personnes moins valides.</p>
+
+      <h2>Hébergement</h2>
+      <p>
+        Un <a
+          href="http://www.allsuites-apparthotel.com/residences-hotelieres/all-suites-appart-hotel-choisy-le-roi"
+          title="Appart Hôtel Choisy-le-Roi">appart-hôtel</a
+        > est présent à moins d’une minute de la médiathèque.
+      </p>
+      <p>
+        Des logements sont aussi généralement disponibles aux alentours via
+        <a
+          href="https://www.airbnb.fr/s/Choisy~le~Roi/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJSzO-mZB05kcRYDmLaMOCCwQ&search_type=section_navigation&screen_size=large&checkin=2023-06-14&checkout=2023-06-19"
+          >AirBNB</a
+        >
+      </p>
+    </section>
+    <section id="food">
+      <h2>Restauration</h2>
+      <p>
+        Des foods-trucks seront présents tous les midis pendant le festival, de
+        11h30 à 15h30.
+      </p>
+
+      <!--p>
+          Les menus proposés seront publiés ici-même dès que nous en aurons
+          connaissance.
+        </p-->
+
+      <p>
+        Cette année c’est le food-truck<a
+          href="https://obokit-food-truck.eatbu.com/?lang=fr"
+          target="_blank">Obokit</a
+        > qui sera présent les 3 jours de festival.<br />
+        Le menu est disponible <a
+          href="https://cdn.website.dish.co/media/8a/80/5942631/Menu-1.pdf"
+          >ici</a
+        >.
+      </p>
+
+      <p>
+        Pas d’inquiétude pour nos ami·es carnistes, des menus spéciaux leurs
+        seront proposés.
+      </p>
+    </section>
+    <section id="coc">
+      <h2>Code de conduite</h2>
+      <p>
+        Le festival PSES a pour vocation d’être un bon moment pour tou·tes les
+        participant·es, et non seulement la majorité.
+      </p>
+
+      <p>
+        La participation à notre festival vaut approbation de notre code de
+        conduite,
+        <a
+          href="/files/code-of-conduct.pdf"
+          title="Lire le code de conduite au format PDF"
+        >
+          téléchargeable en PDF
+        </a>.
+        <br />
+        Toute personne l’enfreignant se verra immédiatement exclue du festival.
+      </p>
+
+      <p>
+        La captation de vidéo ou de photo est soumise à l’<em
+          >accord préalable
+        </em>
+        des personnes présentes.
+      </p>
+
+      <p>
+        Des personnes présentes sont à risque, voire très à risque, vis-à-vis du
+        COVID, le port du masque est donc très fortement recommandé, voire <em
+          >obligatoire</em
+        >, dans les environnements clos. Merci pour elles !
+      </p>
+
+      <ul class="coc-list">
+        <li>
+          <img src="/img/no-harassment.png" alt="Pas de harcèlement" />
+        </li>
+        <li>
+          <img src="/img/no-camera.png" alt="Pas de caméra sans autorisation" />
+        </li>
+        <li>
+          <img src="/img/no-photo.png" alt="Pas de photo" />
+        </li>
+        <li>
+          <img src="/img/masques.png" alt="Port du masque recommandé" />
+        </li>
+      </ul>
+    </section>
+  </main>
+</Layout>
+
+<PSESFooter />
+
+<style>
+  #main {
+    --link-color: var(--color-primary);
+    --focus-color: var(--color-primary);
+  }
+  a {
+    padding: 0.25rem;
+    margin: -0.25rem;
+  }
+  .coc-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  .coc-list img {
+    width: 10rem;
+  }
+</style>

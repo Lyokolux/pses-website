@@ -1,0 +1,54 @@
+---
+import SkipLink from "../atoms/SkipLink.astro";
+---
+
+<header>
+  <SkipLink />
+  <a class="home" href="/">
+    <img class="logo" src="logo.svg" alt="" />
+    PSES
+  </a>
+  <nav>
+    <a href="/festival">Le festival</a>
+    <a href="/white-rabbit">L’association</a>
+    <a href="/archives">Archives</a>
+  </nav>
+</header>
+
+<style>
+  header {
+    padding: 12px 10vw;
+    background-color: var(--color-primary);
+
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    column-gap: min(64px, 10vw);
+    align-items: center;
+    font-size: 1.25rem;
+  }
+
+  .home {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    row-gap: 16px;
+    column-gap: 24px;
+  }
+
+  a {
+    color: white;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 12px;
+  }
+
+  .logo {
+    width: 2rem;
+  }
+</style>

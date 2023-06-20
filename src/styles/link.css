@@ -1,0 +1,11 @@
+a {
+  color: var(--link-color, white);
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease-out;
+}
+
+a:focus,
+a:hover {
+  border-color: var(--focus-color, white);
+  outline: none;
+}
