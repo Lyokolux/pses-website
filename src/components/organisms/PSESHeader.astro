@@ -1,17 +1,18 @@
 ---
 import SkipLink from "../atoms/SkipLink.astro";
+import Logo from "../../assets/img/logo.svg";
 ---
 
 <header>
   <SkipLink />
-  <a class="home" href="/">
-    <img class="logo" src="logo.svg" alt="" />
+  <a class="home" href={Astro.site}>
+    <img class="logo" src={Logo} alt="" />
     PSES
   </a>
   <nav>
-    <a href="/festival">Le festival</a>
-    <a href="/white-rabbit">L’association</a>
-    <a href="/archives">Archives</a>
+    <a href=`${Astro.site}festival`>Le festival</a>
+    <a href=`${Astro.site}white-rabbit`>L’association</a>
+    <a href=`${Astro.site}archives`>Archives</a>
   </nav>
 </header>
 

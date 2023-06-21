@@ -1,22 +1,24 @@
 ---
+import LicenceLogo from "../../assets/img/cc-by-sa.svg";
 ---
 
 <footer>
   <p class="licence">
     Le contenu de ce site est sous licence
-    <img src="/img/cc-by-sa.svg" alt="CC-BY-SA" />
-  </p>
-  <p>
-    Site conçu avec le moteur de site statique<a href="https://astro.build/"
-      >Astro</a
-    >. Icônes par<a href="https://www.flaticon.com/authors/freepik">Freepik</a
-    >via<a href="https://www.flaticon.com/">FlatIcon</a>.
+    <img src={LicenceLogo} alt="CC-BY-SA" />
   </p>
   <p>
     Pour toute remarque ou défaut sur le site, un signalement ou une
-    contribution à l’amélioration du site est la bienvenue sur notre page<a
+    contribution est la bienvenue sur notre page<a
       href="https://github.com/pas-sage-en-seine/site">GitHub</a
     >!
+  </p>
+  <p>
+    Site conçu avec le moteur de site statique<a href="https://astro.build/"
+      >{Astro.generator}</a
+    >
+    . Icônes par<a href="https://www.flaticon.com/authors/freepik">Freepik</a
+    >via<a href="https://www.flaticon.com/">FlatIcon</a>.
   </p>
 </footer>
 
@@ -29,8 +31,6 @@
     flex-direction: column;
     text-align: center;
     gap: 1rem;
-    justify-content: center;
-    align-items: center;
     font-size: 0.9rem;
     color: white;
     background-color: var(--color-primary);
@@ -56,11 +56,12 @@
 
   .licence {
     display: flex;
+    flex-direction: column;
+    row-gap: 12px;
     align-items: center;
-    column-gap: 12px;
   }
   .licence img {
-    width: 10rem;
+    width: 9rem;
     background-color: white;
     padding: 4px;
     border-radius: 12px;

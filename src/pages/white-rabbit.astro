@@ -6,6 +6,8 @@ import MastodonIcon from "../components/icons/MastodonIcon.astro";
 import EmailIcon from "../components/icons/EmailIcon.astro";
 import TwitterIcon from "../components/icons/TwitterIcon.astro";
 import OctopusIcon from "../components/icons/OctopusIcon.astro";
+import CodeLutin from "../assets/img/code-lutin.png";
+import ChoisyLeRoi from "../assets/img/choisy-le-roi.png";
 import CodeursEnLiberteIcon from "../components/icons/CodeursEnLiberteIcon.astro";
 ---
 
@@ -61,7 +63,7 @@ import CodeursEnLiberteIcon from "../components/icons/CodeursEnLiberteIcon.astro
         </li>
         <li>
           <a href="">
-            <img class="logo" src="/img/code-lutin.png" alt="" />
+            <img class="logo" src={CodeLutin} alt="" />
             Code Lutin
           </a>
         </li>
@@ -73,7 +75,7 @@ import CodeursEnLiberteIcon from "../components/icons/CodeursEnLiberteIcon.astro
         </li>
         <li>
           <a href="">
-            <img class="logo" src="/img/choisy-le-roi.png" alt="" />
+            <img class="logo" src={ChoisyLeRoi} alt="" />
             Ville de Choisy-le-roi
           </a>
         </li>
@@ -132,7 +134,6 @@ import CodeursEnLiberteIcon from "../components/icons/CodeursEnLiberteIcon.astro
   .contact-list .logo {
     width: 4rem;
     height: 4rem;
-    color: black;
   }
 
   .partner-list .logo {
